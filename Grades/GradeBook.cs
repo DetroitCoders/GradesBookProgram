@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    class GradeBook
+    public class GradeBook
     {
         public GradeBook()
         {
@@ -38,6 +38,8 @@ namespace Grades
             stats.AverageGrade = sum / grades.Count;
             return stats;
         }
+
+        public string Name;
 
         private List<float> grades;
     }
